@@ -145,6 +145,12 @@ function logMessage(level, ...details){
 logMessage('info', 'User logged in', {id: 1, name: 'Narasimhan'});
 logMessage('error', 'Payment failed', 'Transaction ID: TXN123');
 
+// Current date
+const date = new Date();
+console.log(date);
+const format = date.toLocaleString();
+console.log(format);
+
 // Real time api fetching with filter method
 fetch("https://dummyjson.com/products?limit=10").then(response => {
     if(!response.ok){
