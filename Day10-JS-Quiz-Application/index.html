@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        
+        .quiz-box{
+            max-width: 600px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .options button{
+            margin: 0.5rem 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Username input modal box -->
+     <div class="modal fade" id="usernameModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Enter your name</h5>
+                </div>
+
+                <div class="modal-body">
+                    <input type="text" class="form-control" id="usernameInput">
+                </div>
+
+                <div class="modal-footer">
+                    <button onclick="startQuiz()" class="btn btn-primary">Start Quiz</button>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- Quiz section -->
+      <div class="quiz-box text-center" id="quizBox">
+        <h2 id="questionText"></h2>
+        <div class="options mt-3" id="optionsBox"></div>
+        <button class="btn btn-success mt-3 d-none" id="nextBtn" onclick="nextQuestion()">Next Question</button>
+      </div>
+
+      <!-- Result Section -->
+       <div class="quiz-box text-center d-none" id="resultBox">
+        <h2>Quiz Completed</h2>
+        <p id="resultText" class="fs-4"></p>
+       </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
