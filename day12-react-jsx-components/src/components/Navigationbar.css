@@ -1,0 +1,17 @@
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightseagreen;
+    padding: 10px;
+}
+
+.navbar-container ul{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.navbar-container ul li {
+    cursor: pointer;
+}

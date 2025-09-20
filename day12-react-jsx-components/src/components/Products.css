@@ -1,0 +1,14 @@
+.product-container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.product-box{
+    background-color: lightslategray;
+    padding: 30px;
+    border-radius: 15px;
+}

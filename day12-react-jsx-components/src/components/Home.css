@@ -1,0 +1,12 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 20px;
+    background: url("https://i.pinimg.com/1200x/19/0b/19/190b1941d58f4d5f32c87cb7e201a9d4.jpg");    
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
