@@ -1,0 +1,36 @@
+{
+  "tasks": [
+    {
+      "id": "5d40",
+      "title": "Devloping",
+      "description": "http://localhost:5000/tasks",
+      "assignedTo": "Someone",
+      "dueDate": "2025-10-09",
+      "isCompleted": false
+    },
+    {
+      "id": "d4f3",
+      "title": "Devloping react app",
+      "description": "import tailwindcss from '@tailwindcss/vite'",
+      "assignedTo": "Sathish",
+      "dueDate": "2025-10-15",
+      "isCompleted": false
+    },
+    {
+      "id": "bda2",
+      "title": "test",
+      "description": "test",
+      "assignedTo": "tester",
+      "dueDate": "2025-10-15",
+      "isCompleted": false
+    },
+    {
+      "id": "49c7",
+      "title": "Development",
+      "description": "React App",
+      "assignedTo": "Me",
+      "dueDate": "2025-10-17",
+      "isCompleted": true
+    }
+  ]
+}
