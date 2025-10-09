@@ -46,6 +46,11 @@ function App() {
 
     if (task.id) {
       // update logic
+      axios.put(`${API}/${task.id}`, task).then(() => {
+        alert("Task Updated");
+        getTasks();
+        clearForm();
+      })
     } else {
       // create
       const newTask = { ...task };
@@ -55,6 +60,17 @@ function App() {
         clearForm();
       })
     }
+  }
+
+  const updateTask = (data) => {
+      setTask(data);
+  }
+
+  const deleteTask = (id) => {
+    axios.delete(`${API}/${id}`).then(() => {
+      alert("Task Deleted");
+      getTasks();
+    })
   }
 
   return (
@@ -98,8 +114,8 @@ function App() {
                   </div>
 
                   <div className='space-x-2'>
-                    <button className='bg-blue-300 text-black font-semibold px-2 py-1 rounded'>Edit</button>
-                    <button className='bg-red-300 text-black font-semibold px-2 py-1 rounded '>Delete</button>
+                    <button className='bg-blue-300 text-black font-semibold px-2 py-1 rounded' onClick={() => updateTask(data)}>Edit</button>
+                    <button className='bg-red-300 text-black font-semibold px-2 py-1 rounded ' onClick={() => deleteTask(data.id)}>Delete</button>
                   </div>
               </div>
             ))
